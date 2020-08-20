@@ -9,12 +9,116 @@
 <body>
 
     
-        <div style="background-color: brown;">asd</div>
+        <div class="mainContainer"> 
+            
+            <div class="textContainer">Id commodo mollit dolor fugiat nisi
+                    commodo. Reprehenderit tempor fugiat ea excepteur incididunt
+                    culpa anim culpa dolor nostrud nostrud dolore et. Mollit sint
+                    velit elit culpa consequat elit irure ullamco cillum nisi 
+                    mollit proident.Exercitation deserunt sunt aliquip qui Lorem
+                    deserunt nulla. Ullamco non ex ad culpa ullamco labore.
+                    Proident nisi ad qui consequat officia eiusmod labore 
+                    adipisicing sunt occaecat duis cupidatat aute. Enim nostrud
+                    tempor nostrud sit velit fugiat consectetur excepteur enim 
+                    cupidatat adipisicing exercitation. Mollit sunt laborum pariatur 
+                    proident ullamco consequat laboris tempor amet.Exercitation 
+                    cupidatat est excepteur reprehenderit enim do sint tempor. Velit 
+                    deserunt adipisicing culpa duis. Nisi cupidatat labore enim amet 
+                    reprehenderit aute. Nulla culpa eiusmod qui aliquip ex enim sunt 
+                    minim commodo. Anim in ipsum cupidatat ullamco velit nisi dolor. 
+                    Eiusmod consectetur incididunt mollit proident sunt sunt voluptate 
+                    do. Mollit laborum id est occaecat sint.</div>
+
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+
+                            <img src="Pictures\12096011_10205852535167376_5680439084259190808_n.jpg" style="width:100%">
+
+                        </div>
+
+
+                        <div class="mySlides fade">
+
+                            <img src="Pictures\13643021_821973861271503_1239835741_n.jpg" style="width:100%">
+
+
+                        </div>
+
+
+                        <div class="mySlides fade">
+
+                            <img src="Pictures\1528677186794.jpg" style="width:100%">
+
+
+                        </div>
+
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+                    </div> 
+                                                              
+                     <br>
+                     <div style="text-align:center">
+                     <span class="dot" onclick="currentSlide(1)"></span> 
+                     <span class="dot" onclick="currentSlide(2)"></span> 
+                     <span class="dot" onclick="currentSlide(3)"></span> 
+                     </div>
+
+                     <div class="textContainer">Excepteur anim officia consequat veniam
+                          reprehenderit nostrud cupidatat. Aute sint non anim excepteur
+                           cillum esse sint consectetur adipisicing. Irure irure labore 
+                           culpa culpa nulla labore mollit.Veniam consectetur sit quis 
+                           labore sunt enim eiusmod aute voluptate ad magna aliqua deserunt 
+                           qui. Ea nulla irure do sunt excepteur consectetur ullamco officia 
+                           deserunt. Ullamco veniam pariatur laborum nulla officia quis
+                            consectetur consequat cupidatat id exercitation. Duis ut occaecat 
+                            ipsum exercitation laborum qui tempor duis id culpa dolore nulla. 
+                            Est sit anim ex ullamco anim magna labore sit consectetur 
+                            incididunt elit dolore eiusmod commodo.</div>
+                     
+
+                     <div>
+                        <iframe width="420" height="345" src="https://www.youtube.com/embed/i7gIpuIVE3k">
+                        </iframe>
+                     </div>
+
+        </div>
     
 
 
 
+<script>
 
+    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 
 
