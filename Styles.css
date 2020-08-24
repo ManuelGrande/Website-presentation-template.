@@ -9,18 +9,19 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    /*
     background-color: green;
+    */
     max-width: 50%;  
     min-width: 500px;
     height: max-content ;  
 }
 
-html {
-    height: 100%;
-  }
 
 body{
-    background-image: url('maxresdefault (1).jpg');
+  /*background-image: url('maxresdefault (1).jpg');
+    background-size: cover;*/
+    background: url('maxresdefault (1).jpg') no-repeat center center fixed; 
     background-size: cover;
     height: 100%;
     display: flex;
@@ -31,7 +32,10 @@ body{
 .textContainer{
 
     margin-top: 10%;
+    /*
     background-color: indigo;
+    */
+    backdrop-filter: blur(5px);
     width: 50%;
     margin: 10% 0 10% 0 ;
 }
@@ -44,7 +48,6 @@ body{
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
 }
 
 /* Next & previous buttons */
@@ -63,7 +66,9 @@ body{
   user-select: none;
 }
 .mySlides {
-  display: none
+  max-width: auto;
+  
+  
 }
 
 /* Position the "next button" to the right */
@@ -77,16 +82,6 @@ body{
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 /* The dots/bullets/indicators */
 .dot {
